@@ -1,0 +1,19 @@
+/*Configuração de Hardware
+Configura UART para comunicação serial.
+Configura I2C para o display SSD1306.
+Configura GPIOs para LEDs e botões.
+Tratamento de Botões com Interrupções e Debounce
+
+Configura IRQ nos botões BTN_A e BTN_B.
+Função debounce_timer_callback() garante que o botão seja processado corretamente.
+Controle dos LEDs
+
+toggle_led() alterna LEDs e exibe informações no display e no Serial Monitor.
+Interação via UART
+
+serial_input_handler() recebe caracteres do PC e os exibe no display.
+Se um número de 0-9 for recebido, exibe um símbolo na matriz WS2812.
+Exibição na Matriz WS2812
+
+display_ws2812_digit() acende LEDs com cores correspondentes a números.
+*/
